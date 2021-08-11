@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/michaelab24/musical-palm-tree-social-net-api/issues"
   },
-  "homepage": "https://github.com/michaelab24/musical-palm-tree-social-net-api#readme"
+  "homepage": "https://github.com/michaelab24/musical-palm-tree-social-net-api#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.13.7"
+  }
 }
