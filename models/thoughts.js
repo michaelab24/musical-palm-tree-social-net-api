@@ -1,4 +1,6 @@
-const ThoughtsSchema = new Schema({
+const { Schema, model } = require('mongoose');
+
+const ThoughtSchema = new Schema({
     thoughtText: {
         type: String,
         required: 'Thought is Required',
@@ -10,4 +12,8 @@ const ThoughtsSchema = new Schema({
         type: Date,
         default: Date.now
     }
-})
+});
+
+const Thought = model('Thought', ThoughtSchema);
+
+module.exports = Thought;
