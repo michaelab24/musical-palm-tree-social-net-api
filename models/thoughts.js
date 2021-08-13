@@ -1,0 +1,13 @@
+const ThoughtsSchema = new Schema({
+    thoughtText: {
+        type: String,
+        required: 'Thought is Required',
+        minLength: 1,
+        maxLength: 280
+    },
+
+    createdAt: {
+        type: Date,
+        default: Date.now
+    }
+})
