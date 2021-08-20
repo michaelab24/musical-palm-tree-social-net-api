@@ -1,9 +1,24 @@
 const router = require('express').Router();
-const { model } = require('mongoose');
 const {
-    getUsers
+    getUsers,
+    // getUsersById,
+    // createUsers,
+    // updateUsers,
+    // deleteUsers,
+    // addFriend,
+    // deleteFriend
 } = require('../../controllers/user-controller')
 
-router.route('/').get(getUsers);
+router.route('/').get(getUsers)
 
-model.exports = router;
+// .post(createUsers);
+
+// router
+//   .route('/:id')
+//   .get(getUsersById)
+//   .put(updateUsers)
+//   .delete(deleteUsers);
+
+//   router.route('/:id/friends/:friendId').post(addFriend).delete(deleteFriend)
+
+module.exports = router;
