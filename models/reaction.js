@@ -11,6 +11,10 @@ const ReactionSchema = new Schema({
         trim: true,
         required: 'Username is Required'
     },
+    // reactionId: {
+    //     type: Schema.Types.ObjectId,
+    //     default: ()=> new Types.ObjectId()
+    // },
     createdAt: {
         type: Date,
         default: Date.now
