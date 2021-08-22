@@ -11,6 +11,9 @@ const {
 
 router
 .route('/').get(getThoughts)
+
+router
+.route('/:userId')
 .post(createThought);
 
 router
